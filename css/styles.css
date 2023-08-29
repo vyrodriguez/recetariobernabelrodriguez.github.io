@@ -1,0 +1,43 @@
+body{
+    background-color: rgb(238, 238, 238);
+    font-family: 'Bitter', serif;
+}
+.logoprincipal{
+    width: 25%;
+    display: block;
+    margin: auto;
+}
+.menu{
+    padding-left: 0%;
+    display: flex;
+    justify-content: center;
+    background-color:#737373;
+}
+.menu li{
+    list-style: none;
+    display: inline;
+    
+}
+
+.menu li a{
+    color: black;
+    font-size: 10px;
+    text-decoration:none;
+    text-align: center;
+    margin: 15px;
+
+}
+
+.menu li:hover{ font-weight:bold; background-color: rgb(238, 238, 238);transform: scale(1.1);}
+
+.presentacion h3{
+    text-align: center;
+}
+
+.img{
+    display: block;
+    margin: auto;
+    width: 20%;
+}
+
+
