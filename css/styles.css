@@ -37,7 +37,74 @@ body{
 .img{
     display: block;
     margin: auto;
-    width: 20%;
+    width: 100px;
+    height: 100px;
 }
+
+
+.recetaizq{
+    border-radius: 5%;
+    background-color: #E1D4BB;
+    font-size: 10px;
+    width: 200px;
+
+}
+.recetader{
+    border-radius: 5%;
+    background-color: #E1D4BB;
+    font-size: 10px;
+    width: 200px;
+}
+.video{
+    width: 100px;
+    height: 80px;
+    display: block;
+    margin: auto;
+}
+
+.flex-container{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+    justify-content:center;
+}
+/* ----------------------------------------------------------------------------------------- */
+                                /* ESTILO FOOTER */
+/* ----------------------------------------------------------------------------------------- */
+
+footer{
+    background-color: #737373;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 0.5fr 0.5fr ;
+    grid-template-areas:
+    "logoredondoFooterB textoFooterRedes"
+    "descripcion  descripcion "
+}
+
+.logoredondoFooterB{
+    width: 100px;
+    border-radius: 20px;
+    grid-area: logoredondoFooterB;
+    margin: 10px 25px 0 40px;
+}
+.descripcion{
+    font-size: 10px;
+    text-align: center;
+    grid-area: descripcion;
+    margin: 20px 20px 0 5px;
+
+}
+.textoFooterRedes{
+    font-size: 14px;
+    text-align: center;
+    grid-area: textoFooterRedes;
+    margin: 25px 5px 0 5px;
+    transition: transform 0.2;
+}
+.textoFooterRedes i:hover {
+    transform: scale(1.2); /* Aumentamos el tamaño del icono al 120% */
+  }
+
 
 
