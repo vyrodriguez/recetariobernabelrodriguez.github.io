@@ -46,9 +46,12 @@ body{
 .img{
     display: block;
     margin: auto;
-    max-height: 400px;
+    max-height: 200px;
 }
 
+.list-group{
+    
+}
 
 .recetaizq{
     border-radius: 5%;
