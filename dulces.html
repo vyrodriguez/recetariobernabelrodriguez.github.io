@@ -28,60 +28,72 @@
         </div>
         
     
-    <nav>
-        <ul class="menu">
-            <li><a href="saladas.html">Recetas Saladas</a></li>
-            <li><a href="dulces.html">Recetas Dulces</a></li>
-        </ul>
-    </nav>
+        <nav class="navbar navbar-expand sticky-top navbar-light menu">
+            <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
+              <ul class="nav navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class= "nav-link" href="saladas.html">Recetas Saladas</a>
+                </li>
+                <li class="nav-item">
+                    <a class= "nav-link" href="dulces.html">Recetas Dulces</a>
+                </li>
+              </ul>
+            </div>
+        </nav>    
+        
     </header>
     <main>
-    <div class="conteiner">
-        <div class="card text-dark bg-ligth">
-            <div class="card-header text-center">BIZCOCHUELO DE NARANJA</div>
-            <div class="col-md-4">
-                <img src="img/bizcochueloNaranja.jpg" class="img-fluid rounded-start" alt="...">
-              </div>
-            <div class="card-body">
-              <h5 class="card-title">¡Ingredientes!</h5>
-              <p class="card-text">
-                <ul class="list-group">
-                    <li class="list-group-item">
-                      <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                        4 huevos
-                    </li>
-                    <li class="list-group-item">
-                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                        200 g de azúcar
-                    </li>
-                    <li class="list-group-item">
-                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                        250 g de harina
-                    </li>
-                    <li class="list-group-item">
-                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">                                        
-                        1 cucharada de polvo de hornear o leudante
-                    </li>
-                    <li class="list-group-item">
-                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                        100 ml de aceite de girasol
-                    </li>
-                    <li class="list-group-item">
-                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                        120 ml de jugo de naranja
-                    </li>
-                    <li class="list-group-item">
-                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                        Ralladura de 1 naranja
-                    </li>
-                    <li class="list-group-item">
-                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                        Manteca para enmantecar el molde
-                    </li>
-                  </ul>               
+    <div class="container d-flex flex-column justify-content-around pb-4 pt-4">
+        <div class="card text-dark bg-ligth d-flex col-9 mx-auto">
+            <div class="card-header text-center h2">BIZCOCHUELO DE NARANJA</div>
+            <div class="card-body d-flex p-0">
+                <div class="d-flex mx-auto">
+                    <img class= "img-fluid"  src="img/bizcochueloNaranja.jpg"  alt="Foto de un bizcochuelo de naranja">
+                </div>
+                <div class="column m-2">
+                    <h5 class="card-title d-flex">¡Ingredientes!</h5>
+                    <p class="card-text d-flex">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                          <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                            4 huevos
+                        </li>
+                        <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                            200 g de azúcar
+                        </li>
+                        <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                            250 g de harina
+                        </li>
+                        <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">                                        
+                            1 cucharada de polvo de hornear o leudante
+                        </li>
+                        <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                            100 ml de aceite de girasol
+                        </li>
+                        <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                            120 ml de jugo de naranja
+                        </li>
+                        <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                            Ralladura de 1 naranja
+                        </li>
+                        <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                            Manteca para enmantecar el molde
+                        </li>
+                      </ul>               
+                </div>
                 </p>
-                <h5 class="card-title">¡Preparación!</h5>
-                <p class="card-text"></p>
+            </div>
+            <div class="card-body d-flex p-0">
+            <div class="column m-4">
+                <h5 class="card-title d-flex ">¡Preparación!</h5>
+                <p class="card-text d-flex "></p>
                 <ol class="list-group list-group-numbered">
                     <li class="list-group-item">Precalentar el horno a 180 grados.
                     <li class="list-group-item">En un bol grande, batir los huevos con el azúcar hasta obtener una mezcla espumosa.</li>
@@ -94,9 +106,10 @@
                 </p>
             </div>
         </div>
-        <div class="card text-dark bg-ligth">
+        </div>
+        <div class="card text-dark bg-ligth d-flex col-9 mx-auto mt-5">
             <div class="card-header text-center">GALLETAS DE CHOCOLATE</div>
-            <div class="col-md-2 ">
+            <div class="d-flex justify-content-center">
                 <img src="img/galleta_Chocolate.jpg" class="img-fluid rounded-start" alt="...">
             </div>
             <div class="card-body">
@@ -151,8 +164,8 @@
                 </p>
             </div>
         </div>
-
     </div>
+    
     </main>
     <footer>
         <img class="logoredondoFooterB" src="img/logoprincipal.png" alt="Logotipo Recetario">

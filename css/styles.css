@@ -10,7 +10,7 @@ body{
 .menu{
     padding-left: 0%;
     display: flex;
-    justify-content: center;
+    justify-content: center !important;
     background-color:#737373;
 }
 .menu li{
@@ -21,13 +21,20 @@ body{
 
 .menu li a{
     color: black;
-    font-size: 10px;
     text-decoration:none;
-    text-align: center;
+
     margin: 15px;
 
 }
 .card{
+    background-color: #E1D4BB !important;
+}
+
+.list-group-item{
+    background-color: #E1D4BB !important;
+}
+
+.form-check-input {
     background-color: #E1D4BB !important;
 }
 .menu li:hover{ font-weight:bold; background-color: rgb(238, 238, 238);transform: scale(1.1);}
@@ -39,8 +46,7 @@ body{
 .img{
     display: block;
     margin: auto;
-    width: 100px;
-    height: 100px;
+    max-height: 400px;
 }
 
 
