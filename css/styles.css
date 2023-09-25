@@ -8,34 +8,31 @@ body{
     margin: auto;
 }
 .menu{
-    padding-left: 0%;
-    display: flex;
     background-color:#737373;
+    padding-left: 0%;
+    padding:10px;
     overflow: hidden;
     font-size: 20px;
     
 }
 .navegacion{
-    background-color:#737373;    
+    background-color:#737373;  
+      
 }
-
+.menu{
+    display: flex;
+}
 .menu li{
     list-style: none;
     display: inline;
-    padding: 25px;
-    
 }
 
 .menu li a{
-    color: black;
+    color: rgba(0,0,0,.55);
     text-decoration:none;
-    margin: 25px;
+    padding:10px;
+    
 
-}
-.buscar{
-   display: flex;
-   margin:25px;
-   
 }
 
 .card{
@@ -47,12 +44,21 @@ body{
 }
 
 .form-check-input {
-    background-color: #E1D4BB !important;
+    background-color: #e1d4bb !important;
 }
 .menu li:hover{ font-weight:bold; background-color: rgb(238, 238, 238);transform: scale(1.1);}
+.navegacion li:hover{ font-weight:bold; background-color: rgb(238, 238, 238);transform: scale(1.1);}
 
-.presentacion h3{
+.presentacion{
+    background-color: rgb(219, 206, 181);
+    border-radius: 5px;
+    padding: 5px;
     text-align: center;
+    border-style:solid;
+    border-color:#b7ab94ea;
+    border-width: 1px; 
+    margin: 0px 15px 0px 15px;
+
 }
 
 .img{
@@ -65,32 +71,41 @@ body{
     justify-content:center;
 }
 
-.recetaizq{
-    border-radius: 5%;
+.cardreceta{
+    border-radius: 5px;
+    border-style:solid;
+    border-width: 1px;
+    border-color:#b7ab94ea;
+    padding:15px;
+    margin:15px;
+    margin-top: 0%;
+    justify-content:center;
     background-color: #E1D4BB;
-    font-size: 10px;
-    width: 200px;
-
-}
-.recetader{
-    border-radius: 5%;
-    background-color: #E1D4BB;
-    font-size: 10px;
-    width: 200px;
+    font-size: 20px;
 }
 .video{
-    width: 100px;
-    height: 80px;
     display: block;
     margin: auto;
 }
-
-.flex-container{
-    display: flex;
-    flex-flow: row wrap;
-    gap: 10px;
-    justify-content:center;
+.ingredientes{
+    margin-top: 15px;
+    text-align: start;
+    text-decoration: none;
+    list-style: none;
+    
 }
+
+
+/* .checkbox {
+    cursor: pointer;
+    border-radius: 5px;
+    background-color:#E1D4BB;
+    width: 20px;
+    height: 20px;
+    appearance: none;
+    border: 2px solid #b7ab94ea;
+} */
+  
 /* ----------------------------------------------------------------------------------------- */
                                 /* ESTILO FOOTER */
 /* ----------------------------------------------------------------------------------------- */

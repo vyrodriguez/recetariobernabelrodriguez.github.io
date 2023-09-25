@@ -27,63 +27,71 @@
             </div>
         </div>
     <nav>
+        
         <ul class="menu">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="saladas.html">Recetas Saladas</a></li>
-            <li><a href="dulces.html">Recetas Dulces</a></li>
-            <li><a href="nosotros.html">Sobre Nosotros</a></li>
+            <div>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="saladas.html">Recetas Saladas</a></li>
+                <li><a href="dulces.html">Recetas Dulces</a></li>
+                <li><a href="nosotros.html">Sobre Nosotros</a></li>
+            </div>
             <div class="buscar"><form action=""><label for="fname"></label><input type="text" id="fname" name="fname" value="Buscar"><input type="submit" value="Buscar"></form> </div>
+            </div>
         </ul>
     </nav>
     </header>
     <main>
-        <div class="flex-container">
-        <div class="recetaizq">
-        <div class="presentacion">
-            <h3>PAN CASERO</h3>
+        <!-- Pan Casero -->
+        <div class="presentacion"><h3>PAN CASERO</h3></div>
+        <div class="cardreceta">
             <img class=img src="img/pan.webp" alt="foto de pan casero">
-        </div>
-        <div class="ingredientes">
+            <div class="ingredientes">
             <h5>Ingredientes</h5>
-            <ul>
-                <li>200 ml de agua tibia (4/5 de taza)</li>
-                <li>21gr de levadura común (o 7gr de la seca)</li>
-                <li>400 g de harina 000</li>
-                <li>4 g de azúcar (1 cdta)</li>
-                <li>7 g de sal (1 cdta colmada)</li>
+            <ul class="ingredientes">
+                <li><input type="checkbox" class="checkbox"> 200 ml de agua tibia (4/5 de taza)</li>
+                <li><input type="checkbox" class="checkbox"> 21gr de levadura común (o 7gr de la seca) </li>
+                <li><input type="checkbox" class="checkbox"> 400 g de harina 000 </li>
+                <li><input type="checkbox" class="checkbox"> 4 g de azúcar (1 cdta) </li>
+                <li><input type="checkbox" class="checkbox"> 7 g de sal (1 cdta colmada)</li>
             </ul>
-        </div>
-        <div class="preparacion">
-            <h5>Preparación</h5>
-        </div>
-        <div class="Notas a Tener cuenta">
-            <h5>Notas a tener en cuenta</h5>
-        </div>
+            </div>
+            <div class="preparacion"><h5>Preparación</h5></div>
+            <ol>
+                <li>Disolver la levadura fresca en agua a temperatura ambiente</li>
+                <li>En un recipiente colocar la harina con una cdita. de sal. En el centro incorporar la mezcla de agua con levadura. Mezclar todo hasta unir bien.</li>
+                <li>Una vez que la pasa está lista y elástica, colocarla nuevamente en un recipiente y dejar reposar 40 minutos o hasta duplicar su volumen</li>
+                <li>Pasado el tiempo, doblar la masa sobre sí misma y dejarla en reposo por 40 minutos más.</li>
+                <li>Colocar un poco de harina sobre una superficie, volcar en ella la masa y dividirla en 3 trozos iguales. Luego hacer un bollo con cada uno y dejarlos reposar por 15 minutos.</li>
+                <li>Pasado el tiempo, formar rectángulos con cada uno de los bollos para luego darle la forma de baguette . Siempre tratando la masa con mucho cuidado.</li>
+                <li>Formadas las tres tiras, colocar bastante harina sobre un repasador y acomodar las baguettes sobre este. Dejarlas levar hasta que doblen su volumen (40-60 minutos).</li>
+                <li>Por último, colocarlas sobre una fuente para horno, realizar unos pequeños cortes por arriba e introducirlas al horno precalentado a 150º-160º.</li>
+                <li>Debajo de la fuente se coloca otra con agua caliente para generar vapor durante la primera cocción. Si se empiezan a tostar se baja la temperatura y se continua la cocción.</li>
+
+            </ol>
             <iframe class="video" src="https://www.youtube.com/embed/v8F6yJt1ULo" title="Pan Casero fácil de hacer | Corteza crujiente y Miga esponjosa" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
-       
-        <div class="recetader">
-            <div class="presentacion">
-                <h3>PLATANITOS FRITOS</h3>
-                <img class=img src="img/platanos.webp" alt="foto de pan casero">
-            </div>
+        <!-- Platanitos Fritos -->
+        <div class="presentacion"><h3>PLATANITOS FRITOS</h3></div>
+        <div class="cardreceta">
+            <img class=img src="img/platanos.webp" alt="foto de pan casero">
             <div class="ingredientes">
-                <h5>Ingredientes</h5>
-                <ul>
-                    <li> 2 plátanos machos</li>
-                    <li>Aceite vegetal, preferiblemente de girasol</li>
-                    <li>Una pizca de sal     </li>
-                </ul>
+            <h5>Ingredientes</h5>
+            <ul class="ingredientes">
+                <li><input type="checkbox" class="checkbox"> 2 plátanos machos</li>
+                <li><input type="checkbox" class="checkbox">Aceite vegetal, preferiblemente de girasol</li>
+                <li><input type="checkbox" class="checkbox">Una pizca de sal</li>
+            </ul>
             </div>
             <div class="preparacion">
                 <h5>Preparación</h5>
-            </div>
-            <div class="Notas a Tener cuenta">
-                <h5>Notas a tener en cuenta</h5>
-            </div>
-                <iframe class="video" src="https://www.youtube.com/embed/rRRCwaLcDnA" title="PLATANITOS FRITOS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>            </div>
+                <ol>
+                    <li>Lo primero que debes hacer es pelar los plátanos.</li>
+                    <li>Cuando tengas los dos plátanos pelados, deberás cortarlos a rodajas muy finas para que el resultado sea un plátano frito crujiente tipo patatas chips. También puedes cortar las rojas un pelín más gruesas y aplastarlas con el culo de un vaso, por ejemplo, para que queden más finas. Añade sal al gusto.</li>
+                    <li>Ahora deberás poner abundante aceite de girasol a calentar en una sartén. Cuando esté caliente, añade las rojadas de plátano y fríelas como si fueran patatas. Muévelas de vez en cuando para que no se peguen y no las retires de la sartén hasta que estén bien doradas.</li>
     
-        </div>
+                </ol>
+                <iframe class="video" src="https://www.youtube.com/embed/rRRCwaLcDnA" title="PLATANITOS FRITOS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>            </div>
+            </div>    
         </div>
     </main>
     <footer>
