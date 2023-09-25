@@ -10,22 +10,34 @@ body{
 .menu{
     padding-left: 0%;
     display: flex;
-    justify-content: center !important;
     background-color:#737373;
+    overflow: hidden;
+    font-size: 20px;
+    
 }
+.navegacion{
+    background-color:#737373;    
+}
+
 .menu li{
     list-style: none;
     display: inline;
+    padding: 25px;
     
 }
 
 .menu li a{
     color: black;
     text-decoration:none;
-
-    margin: 15px;
+    margin: 25px;
 
 }
+.buscar{
+   display: flex;
+   margin:25px;
+   
+}
+
 .card{
     background-color: #E1D4BB !important;
 }
@@ -49,8 +61,8 @@ body{
     max-height: 200px;
 }
 
-.list-group{
-    
+.buscar{
+    justify-content:center;
 }
 
 .recetaizq{
@@ -85,32 +97,18 @@ body{
 
 footer{
     background-color: #737373;
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 1fr 0.5fr 0.5fr ;
-    grid-template-areas:
-    "logoredondoFooterB textoFooterRedes"
-    "descripcion  descripcion "
+    margin-top:15px;
 }
 
-.logoredondoFooterB{
-    width: 100px;
-    border-radius: 20px;
-    grid-area: logoredondoFooterB;
-    margin: 10px 25px 0 40px;
-}
 .descripcion{
     font-size: 10px;
     text-align: center;
     grid-area: descripcion;
-    margin: 20px 20px 0 5px;
 
 }
 .textoFooterRedes{
     font-size: 14px;
     text-align: center;
-    grid-area: textoFooterRedes;
-    margin: 25px 5px 0 5px;
     transition: transform 0.2;
 }
 .textoFooterRedes i:hover {

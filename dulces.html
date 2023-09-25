@@ -6,10 +6,9 @@
     <title>Recetario Familia Bernabel-Rodriguez</title>
     <!-- Libreria Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.2/dist/umd/popper.min.js" integrity="sha384-q9CRHqZndzlxGLOj+xrdLDJa9ittGte1NksRmgJKeCV9DrM7Kz868XYqsKWPpAmn" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    <!-- Estilo de CSS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    <!-- Estilo de CSS -->
     <link rel="stylesheet" href="css/styles.css">
     <!-- Fuentes utilizadas -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,37 +25,43 @@
                 <a href="index.html"><img class="img-fluid" src="img/logoprincipal.png" alt="logo de la pagina"> </a>        
             </div>
         </div>
-        <nav class="navbar navbar-expand sticky-top navbar-light menu">
-            <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
-              <ul class="nav navbar-nav">
-                <li class="nav-item">
-                    <a class= "nav-link" href="index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class= "nav-link" href="saladas.html">Recetas Saladas</a>
-                </li>
-                <li class="nav-item">
-                    <a class= "nav-link" href="dulces.html">Recetas Dulces</a>
-                </li>
-                <li class="nav-item">
-                    <a class= "nav-link" href="nosotros.html">Sobre Nosotros</a>
-                </li>
-
-              </ul>
-            
+        <nav class="navbar navbar-expand-lg navbar-light navegacion">
+            <a class="navbar-brand" href="#">Menú</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav navbar-nav h5">
+                    <li class="nav-item">
+                        <a class= "nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class= "nav-link" href="saladas.html">Recetas Saladas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class= "nav-link" href="dulces.html">Recetas Dulces</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class= "nav-link" href="nosotros.html">Sobre Nosotros</a>
+                    </li>
+    
+                  </ul>
+                
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                    <button class="btn btn-outline-dark" type="submit">Buscar</button>
+                </form>
             </div>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-                <button class="btn btn-outline-dark" type="submit">Buscar</button>
-            </form>
-        </nav>    
-        
+          </nav>
+          
     </header>
     <main>
+ 
+        <!-- Budin de Naranja -->
         <div class="container d-flex flex-column pb-4 pt-4">
             <div class="row">
                 <!-- Columna de la tarjeta -->
-                <div class="col-md-12">
+                <div class="col-md-10">
                     <div class="card text-dark bg-light">
                         <!-- Contenido de la receta -->
                         <div class="card-header text-center h2">BIZCOCHUELO DE NARANJA</div>
@@ -72,7 +77,7 @@
                                 <!-- Columna de los ingredientes y la preparación (derecha en dispositivos de mayor tamaño) -->
                                 <div class="col-md-6 col-lg-8">
                                     <!-- Ingredientes -->
-                                    <h5 class="card-title h3">¡Ingredientes!</h5>
+                                    <h5 class="card-title h3 mt-3">¡Ingredientes!</h5>
                                     <ul class="list-group border-0 active  h5 list-group-horizontal-xl flex-fill col-xl-12">
                                         <li class="list-group-item border-0 col-xl-4"><input class="form-check-input me-1" type="checkbox" value="" aria-label="...">4 huevos</li>                      
                                         <li class="list-group-item border-0 col-xl-4"><input class="form-check-input me-1" type="checkbox" value="" aria-label="...">200 g de azúcar</li>
@@ -99,16 +104,79 @@
                                         <li class="list-group-item border-0">Enmantecar y enharinar un molde para bizcochos (22 cm aprox.) y verter la mezcla.</li>
                                         <li class="list-group-item border-0">Hornear durante 35-45 minutos o hasta que el bizcocho esté doradito y firme al tacto. Dejar enfriar completamente antes de desmoldar y servir.</li>
                                     </ol>
+                                    <!-- Video de youtube -->
+                                    <div class= "d-flex justify-content-end"> 
+                                        <a href="https://www.youtube.com/watch?v=aloNVHxPCZo" target="_blank"><i class="fa-brands fa-square-youtube fa-xl me-4 link-secondary" style="color:red"></i></a>
+                                    </div>                
+                            
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>    
+        <!-- Pasta Frola -->
         <div class="container d-flex flex-column pb-4 pt-4">
             <div class="row">
                 <!-- Columna de la tarjeta -->
-                <div class="col-md-12">
+                <div class="col-md-10">
+                    <div class="card text-dark bg-light">
+                        <!-- Contenido de la receta -->
+                        <div class="card-header text-center h2">PASTA FROLA</div>
+                        <div class="card-body">
+                            <div class="row">
+                                <!-- Columna de la imagen (arriba en dispositivos móviles) -->
+                                <div class="col-md-6 col-lg-4 mx-auto mt-5">
+                                    <div class="text-center image-top">
+                                        <!-- Imagen (arriba en dispositivos móviles) -->
+                                        <img class="img-fluid" width="600px" src="img/pastaFrola.jpg" alt="Foto de un bizcochuelo de naranja">
+                                    </div>
+                                </div>
+                                <!-- Columna de los ingredientes y la preparación (derecha en dispositivos de mayor tamaño) -->
+                                <div class="col-md-6 col-lg-8">
+                                    <!-- Ingredientes -->
+                                    <h5 class="card-title h3 mt-3">¡Ingredientes!</h5>
+                                    <ul class="list-group border-0 active  h5 list-group-horizontal-xl flex-fill col-xl-12">
+                                        <li class="list-group-item border-0 col-xl-4"><input class="form-check-input me-1" type="checkbox" value="" aria-label="...">350gr harina leudante</li>                      
+                                        <li class="list-group-item border-0 col-xl-4"><input class="form-check-input me-1" type="checkbox" value="" aria-label="...">150 gr de azúcar</li>
+                                        <li class="list-group-item border-0 col-xl-4"><input class="form-check-input me-1" type="checkbox" value="" aria-label="...">150 gr de manteca pomada</li>
+                                    </ul>
+                                    <ul class="list-group border-0 active h5 list-group-horizontal-xl flex-fill col-xl-12 ">
+                                        <li class="list-group-item border-0 col-xl-4"><input class="form-check-input me-1" type="checkbox" value="" aria-label="...">1 huevo y una yema</li>
+                                        <li class="list-group-item border-0 col-xl-4"><input class="form-check-input me-1" type="checkbox" value="" aria-label="...">300 gr de membrillo aprox</li>
+                                        <li class="list-group-item border-0 col-xl-4"><input class="form-check-input me-1" type="checkbox" value="" aria-label="...">1 cucharadita de esencia de vainilla</li>
+                                    </ul>
+                                    <ul class="list-group border-0 active  h5 list-group-horizontal-xl flex-fill col-xl-12 ">
+                                        <li class="list-group-item border-0 col-xl-4"><input class="form-check-input me-1" type="checkbox" value="" aria-label="...">Ralladura de medio limón</li>
+                                    
+                                    </ul>
+                                </div>
+                                    <!-- Preparación -->
+                                    <h5 class="card-title mt-4 h3">¡Preparación!</h5>
+                                    <ol class="list-group list-group-numbered">
+                                        <li class="list-group-item border-0 ">Baten la manteca con el azúcar (si tienen con batidora sino con otro utensilio, la idea es que quede como una crema)</li>
+                                        <li class="list-group-item border-0">Le agregan el huevo, la yema, la ralladura y vainilla. Mezclan bien todo. (si hacen la versión individual, usen una yema solamente).</li>
+                                        <li class="list-group-item border-0">Suman la harina de a partes integrándola con la ayuda de una espátula hasta que les queda una masa homogénea que no amasan.</li>
+                                        <li class="list-group-item border-0">La llevan a la heladera no menos de 30', idealmente 40/50'.</li>
+                                        <li class="list-group-item border-0">Luego estiran para forrar el molde y hacer las tiritas, si se les ablanda mucho vuelvan la masa a la heladera sobre todo para las tiritas, porque sino se les van a romper, no las hagan muy finitas.</li>
+                                        <li class="list-group-item border-0">Rellenan con dulce de membrillo, batata o el que prefieran y cocinan en horno medio precalentado unos 40' aprox. Dejan enfriar y una fiesta!</li>
+                                    </ol>
+                                    <!-- Video de youtube -->
+                                    <div class= "d-flex justify-content-end"> 
+                                        <a href="https://www.youtube.com/watch?v=kbTzawpD29w" target="_blank"><i class="fa-brands fa-square-youtube fa-xl me-4 link-secondary" style="color:red"></i></a>
+                                    </div>                
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+        <!-- Galletitas de Chocolate -->
+        <div class="container d-flex flex-column pb-4 pt-4">
+            <div class="row">
+                <!-- Columna de la tarjeta -->
+                <div class="col-md-10">
                     <div class="card text-dark bg-light">
                         <!-- Contenido de la receta -->
                         <div class="card-header text-center h2">GALLETAS DE CHOCOLATE</div>
@@ -124,7 +192,7 @@
                                 <!-- Columna de los ingredientes y la preparación (derecha en dispositivos de mayor tamaño) -->
                                 <div class="col-md-6 col-lg-8">
                                     <!-- Ingredientes -->
-                                    <h5 class="card-title h3">¡Ingredientes!</h5>
+                                    <h5 class="card-title h3 mt-3">¡Ingredientes!</h5>
                                     <ul class="list-group border-0 active  h5 list-group-horizontal-xl flex-fill col-xl-12">
                                         
                                         <li class="list-group-item border-0 col-xl-4"><input class="form-check-input me-1" type="checkbox" value="" aria-label="...">250 gr. de chocolate</li>                      
@@ -151,31 +219,142 @@
                                         <li class="list-group-item border-0">Precalentar el horno a 170 °C y hornear durante 10 min. Ir controlando el color y que no se quemen. Las galletas de chocolate deben quedar crocantes por fuera.</li>               
                                         <li class="list-group-item border-0">Enfriarlas sobre una rejilla y servir.</li>               
                                     </ol>
+                                    <!-- Video de youtube -->
+                                    <div class= "d-flex justify-content-end"> 
+                                        <a href="https://www.youtube.com/watch?v=aloNVHxPCZo" target="_blank"><i class="fa-brands fa-square-youtube fa-xl me-4 link-secondary" style="color:red"></i></a>
+                                    </div>                
+                        
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>      
-    </div>
+        <!-- Lemon Pie -->
+        <div class="container d-flex flex-column pb-4 pt-4">
+            <div class="row">
+                <!-- Columna de la tarjeta -->
+                <div class="col-md-10">
+                    <div class="card text-dark bg-light">
+                        <!-- Contenido de la receta -->
+                        <div class="card-header text-center h2">LEMON PIE</div>
+                        <div class="card-body">
+                            <div class="row">
+                                <!-- Columna de la imagen (arriba en dispositivos móviles) -->
+                                <div class="col-md-6 col-lg-4 mx-auto mt-5">
+                                    <div class="text-center image-top">
+                                        <!-- Imagen (arriba en dispositivos móviles) -->
+                                        <img class="img-fluid" width="600px" src="img/lemonPie.jpeg" alt="Foto de un Lemon Pie">
+                                    </div>
+                                </div>
+                                <!-- Columna de los ingredientes y la preparación (derecha en dispositivos de mayor tamaño) -->
+                                <div class="col-md-6 col-lg-8">
+                                    <!-- Ingredientes -->
+                                    <h5 class="card-title h3 mt-3">¡Ingredientes!</h5>
+                                    <ul class="list-group border-0 active  h5 list-group-horizontal-xl flex-fill col-xl-12">
+                                        
+                                        <li class="list-group-item border-0 col-xl-4"><input class="form-check-input me-1" type="checkbox" value="" aria-label="...">200g. de galletitas de vainilla</li>                      
+                                        <li class="list-group-item border-0 col-xl-4"><input class="form-check-input me-1" type="checkbox" value="" aria-label="..."> 70g. de manteca</li>
+                                        <li class="list-group-item border-0 col-xl-4"><input class="form-check-input me-1" type="checkbox" value="" aria-label="...">4 huevos</li>
+                                    </ul>                       
+                                    <ul class="list-group border-0 active h5 list-group-horizontal-xl flex-fill col-xl-12 ">
+                                        <li class="list-group-item border-0 col-xl-4"><input class="form-check-input me-1" type="checkbox" value="" aria-label="...">1 lata de leche condensada</li>
+                                        <li class="list-group-item border-0 col-xl-4"><input class="form-check-input me-1" type="checkbox" value="" aria-label="...">1/2 vaso de jugo de limón</li>
+                                        <li class="list-group-item border-0 col-xl-4"><input class="form-check-input me-1" type="checkbox" value="" aria-label="...">Ralladura de medio limón</li>
+                                    </ul>
+                                    <ul class="list-group border-0 active  h5 list-group-horizontal-xl flex-fill col-xl-12 ">
+                                        <li class="list-group-item border-0 col-xl-4"><input class="form-check-input me-1" type="checkbox" value="" aria-label="...">200g. de azúcar</li>                                    
+                                    </ul>
+                                </div>
+                                    <!-- Preparación -->
+                                    <h5 class="card-title mt-4 h3">¡Preparación!</h5>
+                                    <ol class="list-group list-group-numbered">
+                                        <li class="list-group-item border-0">Moler 200 gr de galletitas de vainilla y colocar en un recipiente.
+                                        <li class="list-group-item border-0">Agregar 80-100 gr de manteca derretida. Utilizamos las manos para mezclar hasta que quede con consistencia de arena mojada</li>
+                                        <li class="list-group-item border-0">Desparramar la preparación obtenida en una tartera. Aplastarlo bien con las manos.</li>
+                                        <li class="list-group-item border-0">Por otro lado la crema de limón: separamos yemas y claras de 4 huevos. Colocamos las yemas en un recipiente, agregamos una lata (400gr) de leche condensada y mezclar. Esta receta de lemon pie lleva medio vaso de jugo de limón que se lo agregamos en este momento, junto con rayadura de cáscara. Batimos hasta lograr una consistencia espesa.</li>
+                                        <li class="list-group-item border-0">Agregamos la crema de limón encima de la masa que preparamos al principio en la tartera.</li>
+                                        <li class="list-group-item border-0">Y ahora el merengue francés: empezamos batiendo las 4 claras con batidora hasta que levanten (como si fuera espuma). Agregamos 200 gr de azucar en forma de lluvia sin dejar de batir, seguimos batiendo hasta lograr la consistencia deseada (bien espeso).</li>               
+                                        <li class="list-group-item border-0">Agregamos el merengue encima de la crema de limón en la tartera. Con una cuchara distribuimos y damos al merengue la forma que deseamos (o la que podamos).</li>               
+                                        <li class="list-group-item border-0">Poner al horno (en la bandeja más alta posible o en la parrilla del horno) bien caliente. Estén atentos que es apenas un ratito para que se dore el merengue!</li>               
+                                        <li class="list-group-item border-0">La receta de lemon pie está lista</li>               
+                                    </ol>
+                                    <!-- Video de youtube -->
+                                    <div class= "d-flex justify-content-end"> 
+                                        <a href="https://www.youtube.com/watch?v=9yuxHcfTczw" target="_blank"><i class="fa-brands fa-square-youtube fa-xl me-4 link-secondary" style="color:red"></i></a>
+                                    </div>                
+                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>      
+        <!-- Tortita de Avena -->
+        <div class="container d-flex flex-column pb-4 pt-4">
+            <div class="row">
+                <!-- Columna de la tarjeta -->
+                <div class="col-md-10">
+                    <div class="card text-dark bg-light">
+                        <!-- Contenido de la receta -->
+                        <div class="card-header text-center h2">TORTITA DE AVENA</div>
+                        <div class="card-body">
+                            <div class="row">
+                                <!-- Columna de la imagen (arriba en dispositivos móviles) -->
+                                <div class="col-md-6 col-lg-4 mx-auto mt-5">
+                                    <div class="text-center image-top">
+                                        <!-- Imagen (arriba en dispositivos móviles) -->
+                                        <img class="img-fluid" width="600px" src="img/tortitaAvena.jpg" alt="Foto de un Lemon Pie">
+                                    </div>
+                                </div>
+                                <!-- Columna de los ingredientes y la preparación (derecha en dispositivos de mayor tamaño) -->
+                                <div class="col-md-6 col-lg-8">
+                                    <!-- Ingredientes -->
+                                    <h5 class="card-title h3 mt-3">¡Ingredientes!</h5>
+                                    <ul class="list-group border-0 active  h5 list-group-horizontal-xl flex-fill col-xl-12">
+                                        
+                                        <li class="list-group-item border-0 col-xl-4"><input class="form-check-input me-1" type="checkbox" value="" aria-label="...">1 taza de avena (en hojuelas o en forma de harina)</li>                      
+                                        <li class="list-group-item border-0 col-xl-4"><input class="form-check-input me-1" type="checkbox" value="" aria-label="...">2 plátanos maduros</li>
+                                        <li class="list-group-item border-0 col-xl-4"><input class="form-check-input me-1" type="checkbox" value="" aria-label="...">2 huevos</li>
+                                    </ul>                       
+                                    <ul class="list-group border-0 active h5 list-group-horizontal-xl flex-fill col-xl-12 ">
+                                        <li class="list-group-item border-0 col-xl-4"><input class="form-check-input me-1" type="checkbox" value="" aria-label="...">1 cucharadita de polvo de hornear</li>
+                                        <li class="list-group-item border-0 col-xl-4"><input class="form-check-input me-1" type="checkbox" value="" aria-label="...">Una pizca de sal</li>
+                                        <li class="list-group-item border-0 col-xl-4"><input class="form-check-input me-1" type="checkbox" value="" aria-label="...">Aceite o manteca</li>
+                                    </ul>
+                                </div>
+                                    <!-- Preparación -->
+                                    <h5 class="card-title mt-4 h3">¡Preparación!</h5>
+                                    <ol class="list-group list-group-numbered">
+                                        <li class="list-group-item border-0">Pelar los plátanos maduros y colocarlos en un bol. Triturar con un tenedor hasta obtener un puré suave.</li>  
+                                        <li class="list-group-item border-0">Agregar la avena, los huevos y el polvo de hornear mezclando hasta que se combinen bien. </li>
+                                        <li class="list-group-item border-0">Dejar reposar unos minutos para que la avena absorba un poco de líquido y la masa se espese ligeramente.</li>
+                                        <li class="list-group-item border-0">Calentar una sartén antiadherente a fuego medio y añadir un poco de aceite o manteca para engrasar. Verter porciones de la masa en la sartén para formar las tortitas. </li>
+                                        <li class="list-group-item border-0">Cocinar 2-3 minutos por cada lado, hasta que las tortitas estén doradas y cocidas en el centro. Dejar enfriar un poco.</li>
+                                    </ol>
+                                    <!-- Video de youtube -->
+                                    <div class= "d-flex justify-content-end"> 
+                                        <a href="https://www.youtube.com/watch?v=vJpzU7zfBTI" target="_blank"><i class="fa-brands fa-square-youtube fa-xl me-4 link-secondary" style="color:red"></i></a>
+                                    </div>                
+                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>      
     
     </main>
 
-
-
-
-
-
-    <footer class="d-flex bg-body">
-        
-        <section class= "d-flex col-12 row ">
+    <footer class="d-flex">
+        <section class= "d-flex col-12 row mt-4 ">
             <div class= "d-flex justify-content-center"> 
                 <a href="https://www.instagram.com/ana.v.rodriguez.12" target="_blank"><i class="fa-brands fa-square-instagram fa-xl me-4 link-secondary" style="color:black"></i></a>
                 <a href="https://www.linkedin.com/in/ana-victoria-rodriguez-009b93229/" target="_blank"><i class="fa-brands fa-linkedin fa-xl me-4 link-secondary" style="color:black;"></i></a>
                 <a href="https://github.com/vyrodriguez" target="_blank"><i class="fa-brands fa-square-github  fa-xl me-4 link-secondary" style="color: black;"></i></a>
                 <a href="mailto:anavictoriarodriguez@gmail.com?subject=programa%codo%a%codo" target="_blank"><i class="fa fa-envelope me-4  fa-xl llink-secondary" style="color: black;"></i></a>
             </div>                
-            <div class="text-center">© 2023 Copyright: Codo a Codo</div>
+            <div class="descripcion">© 2023 Copyright: Codo a Codo</div>
         </section>
         
     </footer>
