@@ -9,8 +9,7 @@ body{
 }
 .menu{
     background-color:#737373;
-    padding-left: 0%;
-    padding:10px;
+    padding:8px;
     overflow: hidden;
     font-size: 20px;
     
@@ -18,9 +17,6 @@ body{
 .navegacion{
     background-color:#737373;  
       
-}
-.menu{
-    display: flex;
 }
 .menu li{
     list-style: none;
@@ -89,6 +85,7 @@ body{
 }
 .ingredientes{
     margin-top: 15px;
+    margin-bottom: 15px;
     text-align: start;
     text-decoration: none;
     list-style: none;
@@ -131,4 +128,30 @@ footer{
   }
 
 
+/* ----------------------------------------------------------------------------------------- */
+                                /* RESPONSIVE LAPTOP */
+/* ----------------------------------------------------------------------------------------- */
+@media (min-width: 1024px){
+    
+    .contenedor{
+       display: grid;
+       justify-content: center;
+    }
+    .cardreceta{
+        max-width: 800px;
+        margin-left: 50px;
+    }
+    .presentacion{
+        max-width: 800px;
+        margin-left: 50px;
+    }
+    .menu{
+        display: flex;
+        justify-content: space-between;
+    }
+    .ingredientes{
+        display: flex;
+        
+    }
 
+    }
