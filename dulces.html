@@ -25,54 +25,62 @@
                 <a href="index.html"><img class="img-fluid" src="img/logoprincipal.png" alt="logo de la pagina"> </a>        
             </div>
         </div>
-        <nav class="navbar navbar-expand-lg navbar-light navegacion">
+        <nav class="navbar navbar-expand-lg navbar-light navegacion mb-4">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-md-between justify-content-lg-between" id="navbarNav">
                 <ul class="nav navbar-nav h5">
                     <li class="nav-item">
-                        <a class= "nav-link" href="index.html">Inicio</a>
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="recetasSaladasDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Recetas Saladas
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="recetasSaladasDropdown">
+                            <a class="dropdown-item" href="saladas.html#panCasero">Pan Casero</a>
+                            <a class="dropdown-item" href="saladas.html#platanoFrito">Platanitos Fritos</a>
+                            <a class="dropdown-item" href="saladas.html#moroHabichuela">Moro de Habichuelas</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="recetasDulcesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Recetas Dulces
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="recetasDulcesDropdown">
+                            <a class="dropdown-item" href="dulces.html#bizcochueloNaranja">Bizcochuelo de Naranja</a>
+                            <a class="dropdown-item" href="dulces.html#pastaFrola">Pasta Frola</a>
+                            <a class="dropdown-item" href="dulces.html#galletitaChocolate">Galletitas de Chocolate</a>
+                            <a class="dropdown-item" href="dulces.html#lemonPie">Lemon Pie</a>
+                            <a class="dropdown-item" href="dulces.html#tortitaAvena">Tortita de Avena</a>
+                        </div>
                     </li>
                     <li class="nav-item">
-                        <a class= "nav-link" href="saladas.html">Recetas Saladas</a>
+                        <a class="nav-link" href="nosotros.html">Acerca de mí</a>
                     </li>
-                    <li class="nav-item">
-                        <a class= "nav-link" href="dulces.html">Recetas Dulces</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class= "nav-link" href="nosotros.html">Acerca de mí</a>
-                    </li>
-    
-                  </ul>
-                <form class="d-flex" role="search">
+                </ul>
+                <form class="d-flex " role="search">
                     <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
                     <button class="btn btn-outline-dark" type="submit">Buscar</button>
                 </form>
             </div>
-          </nav>
-          
+        </nav>
+            
     </header>
-    <main class=" align-items-center">
- 
-        <!-- Budin de Naranja -->
-        <div class="container pb-4 pt-4  ">
+    <main class=" align-items-center ">
+        <div class="container pb-4 pt-4 " id="bizcochueloNaranja">
             <div class="row justify-content-center">
-                <!-- Columna de la tarjeta -->
                 <div class="col-md-10 justify-content-center">
                     <div class="card text-dark bg-light">
-                        <!-- Contenido de la receta -->
                         <div class="card-header text-center h2">BIZCOCHUELO DE NARANJA</div>
                         <div class="card-body ">
                             <div class="row">
-                                <!-- Columna de la imagen (arriba en dispositivos móviles) -->
                                 <div class="col-md-6 col-lg-4 mx-auto mt-5">
                                     <div class="text-center image-top">
-                                        <!-- Imagen (arriba en dispositivos móviles) -->
                                         <img class="img-fluid" width="600px" src="img/bizcochueloNaranja.jpg" alt="Foto de un bizcochuelo de naranja">
                                     </div>
                                 </div>
-                                <!-- Columna de los ingredientes y la preparación (derecha en dispositivos de mayor tamaño) -->
                                 <div class="col-md-6 col-lg-8 ">
                                     <!-- Ingredientes -->
                                     <h5 class="card-title h3 mt-3">¡Ingredientes!</h5>
@@ -114,25 +122,19 @@
             </div>
         </div>    
         <!-- Pasta Frola -->
-        <div class="container d-flex flex-column pb-4 pt-4">
+        <div class="container d-flex flex-column pb-4 pt-4" id="pastaFrola">
             <div class="row justify-content-center">
-                <!-- Columna de la tarjeta -->
                 <div class="col-md-10">
                     <div class="card text-dark bg-light">
-                        <!-- Contenido de la receta -->
                         <div class="card-header text-center h2">PASTA FROLA</div>
                         <div class="card-body">
                             <div class="row">
-                                <!-- Columna de la imagen (arriba en dispositivos móviles) -->
                                 <div class="col-md-6 col-lg-4 mx-auto mt-5">
                                     <div class="text-center image-top">
-                                        <!-- Imagen (arriba en dispositivos móviles) -->
-                                        <img class="img-fluid" width="600px" src="img/pastaFrola.jpg" alt="Foto de un bizcochuelo de naranja">
+                                        <img class="img-fluid" width="600px" src="img/pastaFrola.jpg" alt="Foto de una Pasta Frola">
                                     </div>
                                 </div>
-                                <!-- Columna de los ingredientes y la preparación (derecha en dispositivos de mayor tamaño) -->
                                 <div class="col-md-6 col-lg-8">
-                                    <!-- Ingredientes -->
                                     <h5 class="card-title h3 mt-3">¡Ingredientes!</h5>
                                     <ul class="list-group border-0 active  h5 list-group-horizontal-xl flex-fill col-xl-12">
                                         <li class="list-group-item border-0 col-xl-4"><input class="form-check-input me-1" type="checkbox" value="" aria-label="...">350gr harina leudante</li>                      
@@ -170,26 +172,19 @@
                 </div>
             </div>
         </div>    
-        <!-- Galletitas de Chocolate -->
-        <div class="container d-flex flex-column pb-4 pt-4">
+        <div class="container d-flex flex-column pb-4 pt-4" id="galletitaChocolate">
             <div class="row justify-content-center">
-                <!-- Columna de la tarjeta -->
                 <div class="col-md-10">
                     <div class="card text-dark bg-light">
-                        <!-- Contenido de la receta -->
                         <div class="card-header text-center h2">GALLETAS DE CHOCOLATE</div>
                         <div class="card-body">
                             <div class="row">
-                                <!-- Columna de la imagen (arriba en dispositivos móviles) -->
                                 <div class="col-md-6 col-lg-4 mx-auto mt-5">
                                     <div class="text-center image-top">
-                                        <!-- Imagen (arriba en dispositivos móviles) -->
                                         <img class="img-fluid" width="600px" src="img/galleta_Chocolate.jpg" alt="Foto de un bizcochuelo de naranja">
                                     </div>
                                 </div>
-                                <!-- Columna de los ingredientes y la preparación (derecha en dispositivos de mayor tamaño) -->
                                 <div class="col-md-6 col-lg-8">
-                                    <!-- Ingredientes -->
                                     <h5 class="card-title h3 mt-3">¡Ingredientes!</h5>
                                     <ul class="list-group border-0 active  h5 list-group-horizontal-xl flex-fill col-xl-12">
                                         
@@ -228,26 +223,19 @@
                 </div>
             </div>
         </div>      
-        <!-- Lemon Pie -->
-        <div class="container d-flex flex-column pb-4 pt-4">
+        <div class="container d-flex flex-column pb-4 pt-4" id="lemonPie">
             <div class="row justify-content-center">
-                <!-- Columna de la tarjeta -->
                 <div class="col-md-10">
                     <div class="card text-dark bg-light">
-                        <!-- Contenido de la receta -->
                         <div class="card-header text-center h2">LEMON PIE</div>
                         <div class="card-body">
                             <div class="row">
-                                <!-- Columna de la imagen (arriba en dispositivos móviles) -->
                                 <div class="col-md-6 col-lg-4 mx-auto mt-5">
                                     <div class="text-center image-top">
-                                        <!-- Imagen (arriba en dispositivos móviles) -->
                                         <img class="img-fluid" width="600px" src="img/lemonPie.jpeg" alt="Foto de un Lemon Pie">
                                     </div>
                                 </div>
-                                <!-- Columna de los ingredientes y la preparación (derecha en dispositivos de mayor tamaño) -->
                                 <div class="col-md-6 col-lg-8">
-                                    <!-- Ingredientes -->
                                     <h5 class="card-title h3 mt-3">¡Ingredientes!</h5>
                                     <ul class="list-group border-0 active  h5 list-group-horizontal-xl flex-fill col-xl-12">
                                         
@@ -289,25 +277,19 @@
             </div>
         </div>      
         <!-- Tortita de Avena -->
-        <div class="container d-flex flex-column pb-4 pt-4">
+        <div class="container d-flex flex-column pb-4 pt-4" id="tortitaAvena">
             <div class="row justify-content-center">
-                <!-- Columna de la tarjeta -->
                 <div class="col-md-10">
                     <div class="card text-dark bg-light">
-                        <!-- Contenido de la receta -->
                         <div class="card-header text-center h2">TORTITA DE AVENA</div>
                         <div class="card-body">
                             <div class="row">
-                                <!-- Columna de la imagen (arriba en dispositivos móviles) -->
                                 <div class="col-md-6 col-lg-4 mx-auto mt-5">
                                     <div class="text-center image-top">
-                                        <!-- Imagen (arriba en dispositivos móviles) -->
                                         <img class="img-fluid" width="600px" src="img/tortitaAvena.jpg" alt="Foto de un Lemon Pie">
                                     </div>
                                 </div>
-                                <!-- Columna de los ingredientes y la preparación (derecha en dispositivos de mayor tamaño) -->
                                 <div class="col-md-6 col-lg-8">
-                                    <!-- Ingredientes -->
                                     <h5 class="card-title h3 mt-3">¡Ingredientes!</h5>
                                     <ul class="list-group border-0 active  h5 list-group-horizontal-xl flex-fill col-xl-12">
                                         

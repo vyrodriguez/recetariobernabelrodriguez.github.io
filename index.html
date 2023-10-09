@@ -28,82 +28,160 @@
             </div>
         </div>
         <nav class="navbar navbar-expand-lg navbar-light navegacion mb-4">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-md-between justify-content-lg-between" id="navbarNav">
-                <ul class="nav navbar-nav h5">
-                    <li class="nav-item">
-                        <a class= "nav-link" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class= "nav-link" href="saladas.html">Recetas Saladas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class= "nav-link" href="dulces.html">Recetas Dulces</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class= "nav-link" href="nosotros.html">Acerca de mí</a>
-                      </li>
-                </ul>
-                <form class="d-flex " role="search">
-                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-                    <button class="btn btn-outline-dark" type="submit">Buscar</button>
-                </form>
-            </div>
-          </nav>
+          </button>
+          <div class="collapse navbar-collapse justify-content-md-between justify-content-lg-between" id="navbarNav">
+              <ul class="nav navbar-nav h5">
+                  <li class="nav-item">
+                      <a class="nav-link" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="recetasSaladasDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Recetas Saladas
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="recetasSaladasDropdown">
+                          <a class="dropdown-item" href="saladas.html#panCasero">Pan Casero</a>
+                          <a class="dropdown-item" href="saladas.html#platanoFrito">Platanitos Fritos</a>
+                          <a class="dropdown-item" href="saladas.html#moroHabichuela">Moro de Habichuelas</a>
+                      </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="recetasDulcesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Recetas Dulces
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="recetasDulcesDropdown">
+                          <a class="dropdown-item" href="dulces.html#bizcochueloNaranja">Bizcochuelo de Naranja</a>
+                          <a class="dropdown-item" href="dulces.html#pastaFrola">Pasta Frola</a>
+                          <a class="dropdown-item" href="dulces.html#galletitaChocolate">Galletitas de Chocolate</a>
+                          <a class="dropdown-item" href="dulces.html#lemonPie">Lemon Pie</a>
+                          <a class="dropdown-item" href="dulces.html#tortitaAvena">Tortita de Avena</a>
+                      </div>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="nosotros.html">Acerca de mí</a>
+                  </li>
+              </ul>
+              <form class="d-flex " role="search">
+                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                  <button class="btn btn-outline-dark" type="submit">Buscar</button>
+              </form>
+          </div>
+      </nav>
+      
     </header>
     <main>
-        <p class="h3 text-center mb-4">¡BIENVENIDOS!</p>
-        
-          <div id="carouselExampleDark" class="carousel carousel-dark slide mt-4" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="10000">
-                <img src="img/bizcochueloNaranja.jpg" class="d-block mx-auto" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Recetas Dulces</h5>
-                  <p>Bizcochuelo de Naranja</p>
+        <p class="h1 text-center mb-4">¡BIENVENIDOS!</p>
+        <p class="h3 text-center mb-4">Recetas fáciles: rápidas y sencillas de preparar sin renunciar a que sea una comida deliciosa</p>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div id="carouselExampleDark" class="carousel carousel-dark slide mt-4" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
                 </div>
-              </div>
-              <div class="carousel-item" data-bs-interval="2000">
-                <img src="img/platanos.webp" class="d-block mx-auto" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Recetas Saladas</h5>
-                  <p>Platanitos Fritos</p>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="img/moro.jpg" class="d-block mx-auto" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Recetas Saladas</h5>
+                      <p>Moro de Habichuelas</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="img/platanos.webp" class="d-block mx-auto" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Recetas Saladas</h5>
+                      <p>Platanitos Fritos</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item"data-bs-interval="2000">
+                    <img src="img/lemonPie.jpeg" class="d-block mx-auto" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Recetas Dulces</h5>
+                      <p>Lemon Pie</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="img/pan.webp" class="d-block mx-auto" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Recetas Saladas</h5>
+                      <p>Pan Casero</p>
+                    </div>
+                  </div>
+    
                 </div>
-              </div>
-              <div class="carousel-item"data-bs-interval="2000">
-                <img src="img/lemonPie.jpeg" class="d-block mx-auto" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Recetas Dulces</h5>
-                  <p>Lemon Pie</p>
-                </div>
-              </div>
-              <div class="carousel-item" data-bs-interval="2000">
-                <img src="img/pan.webp" class="d-block mx-auto" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Recetas Saladas</h5>
-                  <p>Pan Casero</p>
-                </div>
-              </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </button>
 
+              </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Anterior</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Siguiente</span>
-            </button>
+            <!-- Carrousel Dulces -->
+              <div class="col-md-6">
+                <div id="carouseldulce" class="carousel carousel-dark slide mt-4" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouseldulce" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouseldulce" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouseldulce" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouseldulce" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                      <img src="img/bizcochueloNaranja.jpg" class="d-block mx-auto" alt="...">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Recetas Dulces</h5>
+                        <p>Bizcochuelo de Naranja</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                      <img src="img/pastaFrola.jpg" class="d-block mx-auto" alt="...">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Recetas Dulces</h5>
+                        <p>Pasta Frola</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item"data-bs-interval="2000">
+                      <img src="img/lemonPie.jpeg" class="d-block mx-auto" alt="...">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Recetas Dulces</h5>
+                        <p>Lemon Pie</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                      <img src="img/galleta_Chocolate.jpg" class="d-block mx-auto" alt="...">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Recetas Dulces</h5>
+                        <p>Galletitas de Chocolate</p>
+                      </div>
+                    </div>
+      
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouseldulce" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouseldulce" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                  </button>
+  
+                </div>
+                
+              </div>
           </div>
+
           
+        </div>
+                
     </main>
     <footer class="d-flex">
         <section class= "d-flex col-12 row mt-4 ">
